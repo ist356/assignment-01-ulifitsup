@@ -12,3 +12,12 @@ The output should be:
 {'odd': [3, 5], 'even': [2, 4, 6]}
 '''
 
+i = int(input("Please enter the number, enter 0 for exiting: "))
+numbers = {"odd":[],"even":[]}
+while i != 0:
+    if i % 2 == 1:
+       numbers["odd"].append(i)
+    else:
+        numbers["even"].append(i) 
+    i = int(input("Please enter the number, enter 0 for exiting: "))
+print(numbers)
